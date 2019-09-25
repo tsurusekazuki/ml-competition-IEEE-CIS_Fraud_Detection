@@ -158,7 +158,7 @@ features_columns = [col for col in list(train_df) if col not in remove_features]
 ########################### Final Minification
 if not LOCAL_TEST:
     train_df = reduce_mem_usage(train_df)
-    test_df  = reduce_mem_usage(test_df)
+    test_df = reduce_mem_usage(test_df)
 
 
 ########################### Model Train
